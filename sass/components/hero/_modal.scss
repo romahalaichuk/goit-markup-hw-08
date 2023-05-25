@@ -1,0 +1,193 @@
+.backdrop {
+  background: $light-black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.backdrop.is-hidden .hero__modal-box {
+  transform: translate(-50%, -50%) scale(0.25);
+}
+.is-hidden {
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transition-delay: 500ms;
+}
+.hero__modal-box {
+  position: absolute;
+  width: 528px;
+  min-height: 581px;
+  top: 50%;
+  left: 50%;
+  background: $white;
+  box-shadow: $box-shadow;
+  border-radius: 4px;
+  transform: translate(-50%, -50%) scale(1);
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+.hero__modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 50%;
+  padding: 5px;
+  height: 30px;
+  background-color: var(--white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.hero__form-order {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.hero__modal-forms {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 0px;
+  gap: 10px;
+  padding: 0px;
+  position: relative;
+  width: 448px;
+}
+
+.hero__title-modal {
+  display: block;
+  width: 448px;
+  text-align: center;
+
+  font-size: 20px;
+  line-height: 1.172;
+  font-weight: 700;
+  padding: 0px;
+  margin: 0px 0px 12px 0px;
+}
+
+.hero__label-modal {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 12px;
+  line-height: 1.172;
+  color: $grey;
+  position: relative;
+  gap: 2px;
+}
+.hero__input-icon-focus:focus-within > input,
+.hero__input-icon-focus:focus-within > svg {
+  border-color: $blue;
+  fill: $blue;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero__icon-modal {
+  position: absolute;
+  top: 35px;
+  left: 12px;
+  fill: $dark-black;
+  &:is(:hover, :focus) {
+    fill: $blue;
+  }
+}
+
+.hero__input-modal {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 406px;
+  height: 40px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  padding: 0px 0px 0px 42px;
+  outline: none;
+}
+.hero__text-modal {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  width: 416px;
+  height: 96px;
+  resize: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  padding: 12px 16px;
+  &:is(:focus) {
+    border: 1px solid $blue;
+    transition: $transition-active;
+  }
+}
+
+.hero__check-div {
+  margin: 20px 0px 0px 0px;
+}
+
+.hero__check-modal {
+  appearance: none;
+}
+
+.hero__check-modal:checked + .hero__check-box::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15' fill='none'%3E%3Crect width='16' height='15' fill='%232196F3' rx='2'/%3E%3Cpath fill='%23fff' stroke='%23fff' stroke-width='.2' d='m3.957 7.752-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z'/%3E%3C/svg%3E");
+  background-position: center;
+  border: none;
+}
+.hero__check-box::before {
+  position: absolute;
+  display: block;
+  top: 1px;
+  left: -2px;
+  width: 16px;
+  height: 15px;
+  content: "";
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15' fill='none'%3E%3Cpath fill='%23212121' d='M14.222 1.667v11.666H1.778V1.667h12.444Zm0-1.667H1.778C.8 0 0 .75 0 1.667v11.666C0 14.25.8 15 1.778 15h12.444C15.2 15 16 14.25 16 13.333V1.667C16 .75 15.2 0 14.222 0Z'/%3E%3C/svg%3E");
+  transition: $transition-active;
+}
+
+.hero__check-box {
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $black;
+  margin-top: 20px;
+  padding-left: 24px;
+  position: relative;
+}
+
+.hero__link-modal {
+  color: $blue;
+  cursor: pointer;
+}
+
+.hero__btn-modal-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px 0px 0px;
+  padding: 0px;
+  width: 200px;
+  height: 50px;
+  background-color: $blue;
+  border: 0px;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.87;
+  font-weight: 700;
+  color: $white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:is(:hover, :focus) {
+    transition: $transition-active;
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

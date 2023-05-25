@@ -1,0 +1,24 @@
+.footer__address {
+  display: flex;
+  color: $light-grey;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  &:is(:hover, :focus) {
+    color: $blue;
+  }
+}
+
+.footer__address-w {
+  color: $white;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  &:is(:hover, :focus) {
+    color: $blue;
+  }
+}

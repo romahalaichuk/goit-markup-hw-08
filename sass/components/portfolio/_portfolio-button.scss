@@ -1,0 +1,39 @@
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+.buttons__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.buttons__style {
+  margin-right: 8px;
+}
+.buttons__text {
+  border: none;
+  font-family: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 6px 22px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: $dark-black;
+  background: $light-cream;
+  white-space: nowrap;
+  transition-property: background-color, color;
+  transition: $transition-active;
+  &:hover {
+    color: $white;
+    background-color: $blue;
+  }
+  &:focus {
+    color: $white;
+    background-color: $blue;
+  }
+}

@@ -1,0 +1,79 @@
+.header__navbar {
+  display: flex;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  margin-left: 97px;
+}
+
+.navbar__item {
+  display: block;
+  padding: 32px 0 31px 0;
+  margin-right: 46px;
+}
+
+.navbar__link {
+  padding: 32px 0 31px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  transition-property: color;
+  transition: $transition-active;
+  &:is(:hover, :focus) {
+    color: $blue;
+  }
+}
+.navbar__underscore {
+  position: relative;
+  color: $blue;
+}
+
+.navbar__underscore::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: $blue;
+  border-radius: 2px;
+  bottom: 0;
+}
+.nav__address-g {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  transition-property: color;
+  transition: $transition-active;
+  &:is(:hover, :focus) {
+    color: $blue;
+  }
+}
+
+.nav__contacts {
+  display: flex;
+
+  .header__contact {
+    margin: 32px 0 31px 0;
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
+.nav__icon-link {
+  display: flex;
+  align-items: center;
+  color: $grey;
+  cursor: pointer;
+  transition-property: color;
+  transition: $transition-active;
+  &:is(:hover use, :focus use) {
+    fill: $blue;
+  }
+  .nav__icons {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+}

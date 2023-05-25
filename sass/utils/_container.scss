@@ -1,0 +1,27 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container-header {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header {
+  border-bottom: 1px solid $dark-cream;
+}
+.footer {
+  display: flex;
+  background-color: $dark-navy-blue;
+  padding: 60px 0;
+}
+.footer__container {
+  display: flex;
+  justify-content: flex-start;
+}

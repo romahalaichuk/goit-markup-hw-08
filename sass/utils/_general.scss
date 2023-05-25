@@ -1,0 +1,48 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: $dark-black;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+:focus {
+  outline: none;
+}
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  color: $dark-black;
+  font-size: var(--main-font-size);
+  background-color: $white;
+}

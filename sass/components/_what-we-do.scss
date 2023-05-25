@@ -1,0 +1,41 @@
+.we-do-section {
+  padding-top: 0;
+}
+.we-do {
+  display: flex;
+  flex-direction: column;
+  &__heading {
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  &__list {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    position: relative;
+    margin-right: 30px;
+  }
+  &__vchat-work {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white;
+    position: absolute;
+
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    bottom: 0;
+    right: 0;
+    left: 0;
+    white-space: nowrap;
+    background: rgba(47, 48, 58, 0.8);
+  }
+}

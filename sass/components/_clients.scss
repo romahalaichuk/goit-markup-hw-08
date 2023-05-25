@@ -1,0 +1,42 @@
+.clients__heading {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.clients__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients__item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid $slightly-grey;
+  border-radius: 4px;
+  color: $slightly-grey;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:is(:hover, :focus) {
+    border: 1px solid $blue;
+    color: $blue;
+  }
+}
+.clients__link:hover .clients__link use {
+  fill: $blue;
+}
+
+.clients__icon {
+  fill: currentColor;
+  &:is(:hover) {
+    color: $blue;
+  }
+}

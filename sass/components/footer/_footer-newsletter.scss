@@ -1,0 +1,70 @@
+.footer__newsleter {
+  padding-left: 78px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.newsletter__save {
+  display: flex;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.172;
+  color: $white;
+  padding-top: 0;
+}
+.newsletter__frame {
+  width: 358px;
+  height: 50px;
+  border: 1px solid $newsletter-border;
+  border-radius: 4px;
+  margin: 0px;
+
+  background-color: $dark-navy-blue;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  padding-left: 16px;
+  color: $white;
+  outline: none;
+}
+.newsletter__frame::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: $light-grey;
+  padding-left: 16px;
+}
+//* footer newsller buuton *//
+.footer__btn-newsletter {
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 35px;
+  padding: 0;
+  width: 200px;
+  height: 50px;
+  background-color: $blue;
+  border: 2px solid $blue;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  color: $white;
+  box-shadow: 0px 4px 4px var(--shadow-teamat);
+}
+.footer__icon-newsletter {
+  fill: $white;
+  transition: transform var(--transition-active);
+}
+
+.footer__btn-newsletter:hover .footer__icon-newsletter {
+  transform: scale(1.3);
+  &:is(:hover) {
+    cursor: pointer;
+  }
+}
