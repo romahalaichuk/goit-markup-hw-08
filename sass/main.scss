@@ -3,7 +3,8 @@
 @import "./utils/container";
 //*start*//
 @import "./components/logo";
-@import "./components/navigation";
+@import "./components/nawigation/mobile-meny.scss";
+@import "./components/nawigation/navigation";
 @import "./components/hero/hero";
 @import "./components/hero/modal";
 @import "./components/advantages";

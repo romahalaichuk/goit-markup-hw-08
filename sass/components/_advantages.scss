@@ -14,14 +14,6 @@
     background: $light-cream;
     border-radius: 4px;
     margin-bottom: 30px;
-
-    @media screen and (min-width: $tablet) {
-      width: 354px;
-    }
-
-    @media screen and (min-width: $desktop) {
-      width: 270px;
-    }
   }
   &__atut {
     padding: center;
@@ -33,14 +25,6 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
-    @media screen and (min-width: $tablet) {
-      text-align: left;
-      width: 354px;
-    }
-
-    @media screen and (min-width: $desktop) {
-      width: 270px;
-    }
   }
   &__description {
     font-size: 14px;
@@ -48,23 +32,5 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: $grey;
-    @media screen and (min-width: $tablet) {
-      width: 354px;
-    }
-
-    @media screen and (min-width: $desktop) {
-      width: 270px;
-    }
-  }
-  @media screen and (min-width: $tablet) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-basis: calc((100% - 30px) / 2);
-    gap: 30px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    flex-direction: row;
-    flex-basis: calc((100% - 90px) / 4);
   }
 }
