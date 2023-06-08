@@ -1,10 +1,26 @@
 .header__navbar {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  @media screen and (min-width: $tablet) {
+    gap: 88px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    gap: 93px;
+  }
 }
 .navbar {
   display: flex;
   margin-left: 97px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
 
 .navbar__item {

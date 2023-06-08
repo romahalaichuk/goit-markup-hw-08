@@ -62,6 +62,25 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+  &__burger-menu {
+    padding: 10px 0;
+    border: none;
+    background-color: $white;
+    cursor: pointer;
+
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+  }
 }
 .header {
   border-bottom: 1px solid $dark-cream;
