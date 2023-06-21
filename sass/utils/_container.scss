@@ -93,21 +93,4 @@
 .footer__container {
   display: flex;
   justify-content: flex-start;
-
-  @media screen and (min-width: $tablet) {
-    width: 768px;
-    flex-direction: row;
-
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  @media screen and (min-width: $desktop) {
-    flex-wrap: nowrap;
-
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 70px;
-    text-align: left;
-  }
 }
