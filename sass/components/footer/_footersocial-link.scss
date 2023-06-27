@@ -12,6 +12,9 @@
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  @media screen and (max-width: $tablet) {
+    display: block;
+  }
 }
 .footer__icon-box {
   margin-left: 70px;

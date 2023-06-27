@@ -12,17 +12,15 @@
   background-color: $dark-navy-blue;
   background-size: auto;
   margin: 0 auto;
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    & {
-      background-image: linear-gradient(
-          to top,
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url(../images/fons-img@2x.jpg);
-    }
+  @media screen and (max-width: $tablet) {
+    background-width: 480px;
+    background-height: 400px;
+    background-image: linear-gradient(
+        to top,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/fons-img@2x.jpg);
   }
   @media screen and (min-width: $tablet) {
     width: 100%;
@@ -47,14 +45,8 @@
     text-transform: uppercase;
     color: $white;
     margin-bottom: 30px;
-    @media screen and (min-width: $tablet) {
-      max-width: 360px;
-    }
-
-    @media screen and (min-width: $desktop) {
-      max-width: 696px;
-      font-size: 44px;
-      line-height: 1.36;
+    @media screen and (max-width: $tablet) {
+      font-size: 26px;
     }
   }
   &__hero-button {

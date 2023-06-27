@@ -1,5 +1,8 @@
 .we-do-section {
   padding-top: 0;
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
 }
 .we-do {
   display: flex;

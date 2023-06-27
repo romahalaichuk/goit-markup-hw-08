@@ -6,6 +6,10 @@
   font-style: normal;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  @media screen and (max-width: $tablet) {
+    display: block;
+  }
+
   &:is(:hover, :focus) {
     color: $blue;
   }

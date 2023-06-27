@@ -1,8 +1,7 @@
 .advantages {
   display: flex;
-
-  @media screen and (min-width: $desktop) {
-    display: none;
+  @media screen and (max-width: $tablet) {
+    display: block;
   }
 
   &__item {
@@ -19,6 +18,9 @@
     background: $light-cream;
     border-radius: 4px;
     margin-bottom: 30px;
+    @media screen and (max-width: $tablet) {
+      width: 450px;
+    }
   }
   &__atut {
     padding: center;
