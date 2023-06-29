@@ -8,6 +8,7 @@
   letter-spacing: 0.03em;
   @media screen and (max-width: $tablet) {
     display: block;
+    text-align: center;
   }
 
   &:is(:hover, :focus) {

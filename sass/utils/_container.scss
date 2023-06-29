@@ -1,9 +1,6 @@
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  @media screen and (min-width: $desktop) {
-    padding: 94px 0;
-  }
 
   &__title {
     margin-bottom: 30px;
@@ -14,12 +11,6 @@
     font-weight: 700;
     font-size: 28px;
     line-height: 1.17;
-
-    @media screen and (min-width: $desktop) {
-      font-size: 36px;
-      line-height: 1.16;
-      margin-bottom: 50px;
-    }
   }
 
   &__team {
@@ -27,18 +18,6 @@
   }
   &__work {
     padding-top: 0;
-
-    @media screen and (min-width: $mobile) {
-      padding-bottom: 0;
-    }
-
-    @media screen and (min-width: $tablet) {
-      padding-bottom: 0;
-    }
-
-    @media screen and (min-width: $desktop) {
-      padding-bottom: 94px;
-    }
   }
 }
 .container {
@@ -82,11 +61,17 @@
   display: flex;
   background-color: $dark-navy-blue;
   padding: 60px 0;
+  @media screen and (max-width: $tablet) {
+    @media screen and (max-width: $tablet) {
+      justify-content: center; /* Wyśrodkowanie w poziomie */
+    }
+  }
 }
 .footer__container {
   display: flex;
   justify-content: flex-start;
   @media screen and (max-width: $tablet) {
     display: block;
+    text-align: center; /* Wyśrodkowanie w poziomie dla elementów wewnątrz */
   }
 }

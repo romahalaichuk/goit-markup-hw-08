@@ -5,12 +5,17 @@
   align-items: center;
   @media screen and (max-width: $tablet) {
     display: block;
+    text-align: center;
+    padding-left: 0;
   }
 }
 .newsletter {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  @media screen and (max-width: $tablet) {
+    align-items: center; /* Wyśrodkowanie w poziomie */
+  }
 }
 .newsletter__save {
   display: flex;
@@ -34,6 +39,9 @@
   padding-left: 16px;
   color: $white;
   outline: none;
+  @media screen and (max-width: $tablet) {
+    width: 450px;
+  }
 }
 .newsletter__frame::placeholder {
   font-weight: 400;
