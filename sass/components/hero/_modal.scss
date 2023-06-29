@@ -28,6 +28,10 @@
   transition-property: transform;
   transition-duration: 1s;
   transition-timing-function: ease;
+  @media screen and (max-width: $desktop) {
+    max-width: 450px;
+    max-height: 609px;
+  }
 }
 .hero__modal-close {
   position: absolute;
@@ -58,9 +62,35 @@
   padding: 0px;
   position: relative;
   width: 448px;
+  @media screen and (max-width: $desktop) {
+    width: 370px;
+
+    font-size: 14px;
+  }
 }
 
 .hero__title-modal {
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.hero__title-modal::after {
+  content: "";
+  display: none;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.172;
+  margin-top: 12px;
+}
+
+@media screen and (max-width: $desktop) {
+  .hero__title-modal::after {
+    content: "poniżej";
+    display: block;
+  }
+}
+/*.hero__title-modal {
   display: block;
   width: 448px;
   text-align: center;
@@ -70,7 +100,13 @@
   font-weight: 700;
   padding: 0px;
   margin: 0px 0px 12px 0px;
-}
+  @media screen and (max-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 370px;
+  }
+}*/
 
 .hero__label-modal {
   display: flex;
@@ -103,6 +139,9 @@
   border-radius: 4px;
   width: 406px;
   height: 40px;
+  @media screen and (max-width: $desktop) {
+    width: 370px;
+  }
 
   font-weight: 400;
   font-size: 16px;
@@ -121,6 +160,9 @@
   font-size: 12px;
   line-height: 1.25;
   padding: 12px 16px;
+  @media screen and (max-width: $desktop) {
+    width: 370px;
+  }
   &:is(:focus) {
     border: 1px solid $blue;
     transition: $transition-active;
@@ -157,7 +199,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  color: $black;
+  color: $grey;
   margin-top: 20px;
   padding-left: 24px;
   position: relative;
@@ -166,6 +208,9 @@
 .hero__link-modal {
   color: $blue;
   cursor: pointer;
+  @media screen and (max-width: $desktop) {
+    font-size: 12px;
+  }
 }
 
 .hero__btn-modal-form {
@@ -198,7 +243,7 @@
   background-color: #ffffff;
   cursor: pointer;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }

@@ -19,7 +19,9 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(/images/fons-img@2x.jpg);
-    width: $mobile;
+    display: block;
+    max-width: 100%x;
+    height: 400px;
   }
 
   &__hero-container {

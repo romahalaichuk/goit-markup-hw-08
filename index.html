@@ -276,13 +276,16 @@
           <h2 class="team__heading">Nasz zespół</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                class="team__image"
-                src="images/team.jpg"
-                alt="smiling man with glasses"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <img
+                  class="team__image"
+                  src="images/teams/team.jpg"
+                  alt="smiling man with glasses"
+                  width="270"
+                  height="260"
+                />
+                <source src="./index.html , "
+              </picture>
               <h3 class="team__name">John Doe</h3>
               <p class="team__title">Product Designer</p>
               <ul class="team__socials-list">
@@ -317,13 +320,60 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                class="team__image"
-                src="images/team1.jpg"
-                alt="blonde with glasses"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <img
+                  class="team__image"
+                  src="images/team1.jpg"
+                  alt="blonde with glasses"
+                  width="270"
+                  height="260"
+                />
+                <source
+                  srcset="
+                    ./images/team/photo-ihor-desktop.webp    1x,
+                    ./images/team/photo-ihor-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/photo-ihor-desktop.jpg    1x,
+                    ./images/team/photo-ihor-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/photo-ihor-tablet.webp    1x,
+                    ./images/team/photo-ihor-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/photo-ihor-tablet.jpg    1x,
+                    ./images/team/photo-ihor-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/photo-ihor-mobile.webp    1x,
+                    ./images/team/photo-ihor-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/photo-ihor-mobile.jpg    1x,
+                    ./images/team/photo-ihor-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+              </picture>
               <h3 class="team__name">John Doe</h3>
               <p class="team__title">Frontend Developer</p>
               <ul class="team__socials-list">
@@ -361,13 +411,54 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                class="team__image"
-                src="images/team2.jpg"
-                alt="man in blue shirt"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/photo-ihor-desktop.webp    1x,
+                    ./images/team/photo-ihor-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/team/photo-ihor-desktop.jpg    1x,
+                    ./images/team/photo-ihor-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/team/photo-ihor-tablet.webp    1x,
+                    ./images/team/photo-ihor-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/team/photo-ihor-tablet.jpg    1x,
+                    ./images/team/photo-ihor-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/team/photo-ihor-mobile.webp    1x,
+                    ./images/team/photo-ihor-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/team/photo-ihor-mobile.jpg    1x,
+                    ./images/team/photo-ihor-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+
+                <img
+                  class="team__image"
+                  src="images/team2.jpg"
+                  alt="man in blue shirt"
+                  width="270"
+                  height="260"
+              /></picture>
               <h3 class="team__name">John Doe</h3>
               <p class="team__title">Marketing</p>
               <ul class="team__socials-list">
@@ -405,13 +496,61 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                class="team__image"
-                src="images/team3.jpg"
-                alt="a man in clack t-shirt and glasses"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/photo-ihor-desktop.webp    1x,
+                    ./images/team/photo-ihor-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/photo-ihor-desktop.jpg    1x,
+                    ./images/team/photo-ihor-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/photo-ihor-tablet.webp    1x,
+                    ./images/team/photo-ihor-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/photo-ihor-tablet.jpg    1x,
+                    ./images/team/photo-ihor-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/photo-ihor-mobile.webp    1x,
+                    ./images/team/photo-ihor-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/photo-ihor-mobile.jpg    1x,
+                    ./images/team/photo-ihor-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  class="team__image"
+                  src="images/team3.jpg"
+                  alt="a man in clack t-shirt and glasses"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <h3 class="team__name">John Doe</h3>
               <p class="team__title">UI Designer</p>
               <ul class="team__socials-list">

@@ -2,6 +2,9 @@
   display: flex;
   @media screen and (max-width: $tablet) {
     display: block;
+    @media screen and (min-width: $mobile) {
+      margin-top: -30px;
+    }
   }
 
   &__item {
