@@ -1,6 +1,6 @@
 .footer__newsleter {
-  padding-left: 78px;
   display: flex;
+  padding-left: 78px;
   gap: 12px;
   align-items: center;
   @media screen and (max-width: $tablet) {
@@ -8,13 +8,24 @@
     text-align: center;
     padding-left: 0;
   }
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    flex-direction: column;
+    margin-left: 100px;
+  }
 }
 .newsletter {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: $desktop) {
     align-items: center; /* Wyśrodkowanie w poziomie */
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    text-align: center;
+
+    /* justify-content: center;
+    align-items: center; */
+    margin-top: 60px;
   }
 }
 .newsletter__save {
@@ -24,6 +35,10 @@
   line-height: 1.172;
   color: $white;
   padding-top: 0;
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    justify-content: center;
+    align-items: center;
+  }
 }
 .newsletter__frame {
   width: 358px;
@@ -39,7 +54,7 @@
   padding-left: 16px;
   color: $white;
   outline: none;
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: $desktop) {
     width: 450px;
   }
 }

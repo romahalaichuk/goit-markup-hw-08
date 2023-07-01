@@ -64,17 +64,30 @@
   display: flex;
   background-color: $dark-navy-blue;
   padding: 60px 0;
+
   @media screen and (max-width: $tablet) {
-    @media screen and (max-width: $tablet) {
-      justify-content: center; /* Wyśrodkowanie w poziomie */
-    }
+    justify-content: center;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    display: block;
+    /*flex-direction: column;
+    align-items: center; */
   }
 }
 .footer__container {
   display: flex;
   justify-content: flex-start;
   @media screen and (max-width: $tablet) {
-    display: block;
-    text-align: center; /* Wyśrodkowanie w poziomie dla elementów wewnątrz */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* display: block;
+    text-align: center; */
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* justify-content: space-between;
+    align-items: self-start;
+    max-width: 800px; /* Przykładowa szerokość maksymalna dla sekcji */
   }
 }
