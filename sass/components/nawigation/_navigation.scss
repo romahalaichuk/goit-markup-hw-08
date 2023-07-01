@@ -5,8 +5,12 @@
 .navbar {
   display: flex;
   margin-left: 97px;
+  margin-right: 300px;
   @media screen and (max-width: $tablet) {
     display: none;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    margin-right: 0;
   }
 }
 
@@ -63,9 +67,17 @@
     &:not(:last-child) {
       margin-right: 50px;
     }
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 12px;
+    }
   }
   @media screen and (max-width: $tablet) {
     display: none;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    display: block;
   }
 }
 .nav__icon-link {

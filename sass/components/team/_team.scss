@@ -13,6 +13,12 @@
     @media screen and (max-width: $tablet) {
       display: block;
     }
+
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 30px;
+    }
   }
 }
 
@@ -31,6 +37,9 @@
       margin-right: 0;
       margin-bottom: 30px;
     }
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      margin-right: 0;
+    }
   }
 }
 .team__image {
@@ -38,6 +47,10 @@
   @media screen and (max-width: $tablet) {
     width: 450px;
     height: 460px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    width: 354px;
+    height: 374px;
   }
 }
 .team__name {

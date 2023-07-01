@@ -41,6 +41,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      height: 80px;
+    }
   }
   &__burger-menu {
     padding: 10px 0;

@@ -54,6 +54,9 @@
     @media screen and (max-width: $tablet) {
       font-size: 26px;
     }
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      font-size: 34px;
+    }
   }
   &__hero-button {
     background-color: $blue;
