@@ -24,7 +24,7 @@
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  @media screen and (min-width: 15px) {
+  @media screen and (min-width: 320px) {
     width: $mobile;
   }
 
@@ -64,7 +64,9 @@
   display: flex;
   background-color: $dark-navy-blue;
   padding: 60px 0;
-
+  @media screen and (max-width: $mobile) {
+    min-width: $mobile;
+  }
   @media screen and (max-width: $tablet) {
     justify-content: center;
   }

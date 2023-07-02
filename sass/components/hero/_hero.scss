@@ -36,6 +36,9 @@
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
       height: 400px;
     }
+    @media screen and (max-width: $mobile) {
+      min-width: 480px;
+    }
   }
 
   &__hero-container {

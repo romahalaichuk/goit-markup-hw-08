@@ -40,7 +40,7 @@ body {
   color: $dark-black;
   font-size: var(--main-font-size);
   background-color: $white;
-  overflow-x: hidden !important;
+
   &.no-scroll {
     overflow: hidden;
   }
