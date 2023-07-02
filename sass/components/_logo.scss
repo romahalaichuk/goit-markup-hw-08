@@ -11,6 +11,9 @@
   @media screen and (max-width: $desktop) {
     text-align: center;
   }
+  @media screen and (min-width: $desktop) and (max-width: $desktop) {
+    text-align: left;
+  }
 }
 .header__logo {
   color: $black;
@@ -24,7 +27,7 @@
   line-height: 1.19;
 }
 
-@media screen and (min-width: $tablet) and (max-width: $desktop) {
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
   .footer__logo-section {
     margin-right: 200px;
   }

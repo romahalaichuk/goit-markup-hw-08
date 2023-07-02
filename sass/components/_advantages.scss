@@ -1,17 +1,21 @@
 .advantages {
   display: flex;
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: 1199px) {
     display: block;
-    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 30px;
+      margin-top: -30px;
     }
   }
 
   &__item {
     width: 270px;
     margin-right: 30px;
+    @media screen and (min-width: 767px) and (max-width: 767) {
+      width: 354px;
+    }
   }
 
   &__icons-box {
@@ -28,7 +32,7 @@
       height: 120px;
       margin-top: 30px;
     }
-    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
       width: 354px;
       height: 120px;
     }
@@ -47,6 +51,9 @@
       width: 450px;
       text-align: center;
     }
+    @media screen and (min-width: 768px) and (max-width: 768px) {
+      padding-right: 350px;
+    }
   }
 
   &__description {
@@ -57,6 +64,9 @@
     color: $grey;
     @media screen and (max-width: $tablet) {
       width: 450px;
+    }
+    @media screen and (min-width: 767px) and (max-width: 1199px) {
+      width: 354px;
     }
   }
 }

@@ -14,7 +14,7 @@
       display: block;
     }
 
-    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 30px;
@@ -37,7 +37,7 @@
       margin-right: 0;
       margin-bottom: 30px;
     }
-    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
       margin-right: 0;
     }
   }
@@ -51,6 +51,10 @@
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
     width: 354px;
     height: 374px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+    height: 260px;
   }
 }
 .team__name {

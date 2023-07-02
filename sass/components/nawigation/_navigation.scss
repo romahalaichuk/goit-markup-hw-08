@@ -6,11 +6,13 @@
   display: flex;
   margin-left: 97px;
   margin-right: 300px;
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
     margin-right: 0;
+  }
+  @media screen and (min-width: $desktop) {
   }
 }
 
@@ -67,7 +69,7 @@
     &:not(:last-child) {
       margin-right: 50px;
     }
-    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
       display: block;
       margin-bottom: 10px;
       font-size: 12px;
@@ -78,6 +80,10 @@
   }
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
     display: block;
+  }
+  @media screen and (min-width: $desktop) and (max-width: $desktop) {
+    display: flex;
+    margin-left: 300px;
   }
 }
 .nav__icon-link {

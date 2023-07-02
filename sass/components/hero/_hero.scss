@@ -33,7 +33,7 @@
     display: block;
     max-width: 100%x;
     height: 400px;*/
-    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
       height: 400px;
     }
   }
@@ -44,8 +44,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @media screen and (min-width: $tablet) and (max-width: $desktop) {
-    }
   }
   &__hero-heading {
     font-weight: 900;
