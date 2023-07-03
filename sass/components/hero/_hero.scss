@@ -37,7 +37,8 @@
       height: 400px;
     }
     @media screen and (max-width: $mobile) {
-      min-width: 480px;
+      min-width: auto;
+      padding-top: 94px;
     }
   }
 
@@ -47,6 +48,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: $mobile) {
+      text-align: center;
+    }
   }
   &__hero-heading {
     font-weight: 900;

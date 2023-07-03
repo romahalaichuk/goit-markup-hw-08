@@ -25,11 +25,10 @@
 }
 .clients__item:not(:last-child) {
   margin-right: 30px;
-  @media screen and (max-width: $tablet) {
-    margin: 0;
-  }
-  @media screen and (min-width: $tablet) and (max-width: $desktop) {
-    margin-right: 15px;
+
+  @media screen and (max-width: $desktop) {
+    margin-right: 0;
+    margin-left: 15px;
   }
 }
 .clients__link {
@@ -49,7 +48,8 @@
     color: $blue;
   }
   @media screen and (max-width: 1199px) {
-    width: 210px;
+    width: 100%;
+    max-width: 210px;
     height: 92px;
   }
 }

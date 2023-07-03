@@ -24,9 +24,7 @@
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  @media screen and (min-width: 320px) {
-    width: $mobile;
-  }
+  width: 100%;
 
   @media screen and (min-width: $tablet) {
     width: $tablet;
@@ -64,13 +62,11 @@
   display: flex;
   background-color: $dark-navy-blue;
   padding: 60px 0;
-  @media screen and (max-width: $mobile) {
-    min-width: $mobile;
-  }
+
   @media screen and (max-width: $tablet) {
     justify-content: center;
   }
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @media screen and (min-width: $mobile) and (max-width: 1199px) {
     display: block;
     /*flex-direction: column;
     align-items: center; */
@@ -80,6 +76,7 @@
   display: flex;
   justify-content: flex-start;
   @media screen and (max-width: $tablet) {
+    display: block;
     flex-wrap: wrap;
     justify-content: space-around;
     /* display: block;

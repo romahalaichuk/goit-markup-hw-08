@@ -12,6 +12,7 @@
     align-items: center;
     @media screen and (max-width: $tablet) {
       display: block;
+      text-align: center;
     }
 
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
@@ -31,7 +32,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   @media screen and (max-width: $tablet) {
-    max-width: $mobile;
+    max-width: 450px;
   }
 
   &:not(:last-child) {
@@ -48,8 +49,10 @@
 .team__image {
   margin-bottom: 30px;
   @media screen and (max-width: $tablet) {
-    width: 450px;
-    height: 460px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 450px;
+    max-height: 460px;
   }
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
     width: 354px;

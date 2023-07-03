@@ -3,6 +3,7 @@
   padding-left: 78px;
   gap: 12px;
   align-items: center;
+
   @media screen and (max-width: $tablet) {
     display: block;
     text-align: center;
@@ -35,7 +36,7 @@
   line-height: 1.172;
   color: $white;
   padding-top: 0;
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @media screen and (min-width: 76px) and (max-width: 1199px) {
     justify-content: center;
     align-items: center;
   }
@@ -54,8 +55,11 @@
   padding-left: 16px;
   color: $white;
   outline: none;
+  @media screen and (max-width: $mobile) {
+    width: 320px;
+  }
   @media screen and (max-width: 1199px) {
-    width: 450px;
+    max-width: 450px;
   }
 }
 .newsletter__frame::placeholder {
