@@ -11,7 +11,7 @@
   }
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     flex-direction: column;
-    margin-left: 100px;
+    padding-left: 166px;
   }
 }
 .newsletter {
@@ -59,7 +59,7 @@
     width: 320px;
   }
   @media screen and (max-width: 1199px) {
-    max-width: 450px;
+    width: 450px;
   }
 }
 .newsletter__frame::placeholder {
@@ -86,6 +86,9 @@
   line-height: 1.875;
   color: $white;
   box-shadow: 0px 4px 4px var(--shadow-teamat);
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    margin: 0;
+  }
 }
 .footer__icon-newsletter {
   fill: $white;

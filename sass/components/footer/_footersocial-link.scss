@@ -9,6 +9,9 @@
   @media screen and (max-width: $tablet) {
     text-align: center;
   }
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    margin: 0;
+  }
 }
 .footer__socials-list {
   display: flex;
@@ -29,8 +32,9 @@
   }
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     text-align: center;
-    margin-left: -200px;
-    margin-top: -15px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    margin: 0;
   }
 }
 
@@ -38,6 +42,9 @@
   display: flex;
   &:not(:last-child) {
     margin-right: 10px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    margin: 0;
   }
 }
 .footer__socials-link {

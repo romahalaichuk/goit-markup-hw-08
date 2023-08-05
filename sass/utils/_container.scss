@@ -29,7 +29,6 @@
   @media screen and (min-width: $tablet) {
     width: $tablet;
   }
-
   @media screen and (min-width: $desktop) {
     width: $desktop;
   }
@@ -83,8 +82,7 @@
     text-align: center; */
   }
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 738px;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
